@@ -1,0 +1,23 @@
+ Step 1: Next.js 15 with Page Router
+    i) The application is built using Next.js version 15.
+    ii) I’ve used the Page Router approach to manage routing between different pages (/signin, /signup, /home).
+
+Step 2: Authentication Using localStorage
+    i) User data  is stored and validated using localStorage
+    ii) On signup, user credentials are saved in localStorage.
+    iii) On signin, credentials are verified against the stored data.
+
+Step 3: Notes CRUD Operations on Home Page
+    i) View their notes.
+    ii) Add a new note.
+    iii) Edit/Update an existing note.
+    iv) Delete any note.
+
+Step 4: Protected Route for Home Page
+    i) A condition is added to redirect users to /signin if they try to access the /home page without logging in.
+    ii)This is done using localStorage.getItem("users").
+
+Step 5: User-Specific Notes
+    i) I am updating the logic to ensure each user sees only their own notes.
+    ii) This can be done by saving notes in localStorage with a key tied to the username like
+     localStorage.setItem(`${username}_notes`, JSON.stringify(notes));

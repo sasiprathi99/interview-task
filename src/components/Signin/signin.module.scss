@@ -1,0 +1,84 @@
+.signSec {
+    .signSecContnr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background:linear-gradient(#d9dffe,#fddee4);
+        padding: 20px;
+
+        .signSecfrm {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+            @media(max-width:767px){
+                padding: 20px;
+            }
+
+            .signSecTlt {
+                margin-bottom: 20px;
+                text-align: center;
+                font-size: 24px;
+                color: #000;
+            }
+            .frmPos{
+                position: relative;
+                margin-top: 10px;
+                .error{
+                    background: red;
+                    padding: 5px;
+                    font-size: 10px;
+                    color:#fff;
+                    width: fit-content;
+                    position: absolute;
+                    margin-bottom: 0px;
+                    font-weight: 500;
+                    top: -15px;
+                    right: 0;
+                }
+            }
+            input {
+                width: 100%;
+                padding: 12px 15px;
+                margin-bottom: 15px;
+                border: 1px solid #cccccc;
+                border-radius: 4px;
+                font-size: 16px;
+                box-sizing: border-box;
+                position: relative;
+
+                &:focus {
+                    border-color: #3F5EFB;
+                    outline: none;
+                }
+            }
+
+            button {
+                width: 100%;
+                padding: 12px 15px;
+                background:linear-gradient(90deg,#3F5EFB,#FC466B);
+                color: #ffffff;
+                border: none;
+                border-radius: 4px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            .botmDiv{
+                margin-top: 15px;
+                p{
+                    font-size: 16px;
+                    text-align: center;
+                    font-weight: 500;
+                    a{
+                        text-decoration: underline;
+                    }
+                }
+                
+            }
+        }
+    }
+}
